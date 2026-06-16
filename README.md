@@ -103,6 +103,8 @@ Comprehensive engineering report containing:
 * Cost comparisons
 * Final recommendations
 
+[View Final Engineering Report (PDF)](./Inventory_managment.pdf)
+
 ### `ERGASIA_EN.xlsx`
 
 Interactive spreadsheet model containing:
@@ -112,6 +114,8 @@ Interactive spreadsheet model containing:
 * Inventory optimization logic
 * Cost analysis framework
 * Scenario evaluation tools
+
+[Download Formula-Driven Excel Model (.xlsx)](./ERGASIA_EN.xlsx)
 
 ---
 
