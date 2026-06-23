@@ -1,137 +1,99 @@
+# 📦 Inventory Management & Operational Cost Optimization
 
-# Inventory Management & Operational Cost Optimization
+A data-driven inventory control study for a manufacturing company operating under
+deterministic and stochastic demand — forecasting, policy design, and supplier
+cost analysis to minimize total operating costs while maintaining high service levels.
 
-## Overview
-
-This project investigates inventory control strategies for a manufacturing company operating under both deterministic and stochastic demand conditions. The objective was to minimize total operating costs while maintaining high service levels through forecasting, inventory policy design, and supplier cost analysis.
-
-The study evaluates multiple inventory management approaches and develops data-driven recommendations that balance inventory holding costs, stockout risks, and procurement savings.
-
----
-
-## Problem Statement
-
-The company faced several operational challenges:
-
-* Determining the most accurate demand forecasting method.
-* Evaluating whether supplier quantity discounts were financially beneficial.
-* Comparing alternative service-level policies proposed by management.
-* Selecting the most cost-effective inventory review system.
-* Optimizing inventory decisions under uncertain demand.
+**Institution:** Aristotle University of Thessaloniki (AUTh)  
+**School:** Polytechnic School — Department of Mechanical Engineering  
+**Course:** Inventory Management  
+**Instructor:** Tagaras George  
+**Author:** Charitopoulos Kyriazis 
+**Semester:** 7th Semester  
 
 ---
 
-## Methodology
+## ⚙️ Tech Stack
 
-### Demand Forecasting
-
-* Historical demand analysis
-* Moving Average forecasting
-* Exponential Smoothing
-* Forecast accuracy evaluation using:
-
-  * Mean Squared Error (MSE)
-  * Mean Absolute Deviation (MAD)
-  * Mean Absolute Percentage Error (MAPE)
-
-### Inventory Management
-
-* Economic Order Quantity (EOQ)
-* Continuous Review System (Q, R)
-* Periodic Review System (R, S)
-* Safety Stock calculations
-
-### Service-Level Analysis
-
-* Cycle Service Level (P1)
-* Fill Rate (P2)
-
-### Cost Analysis
-
-* Inventory holding costs
-* Ordering costs
-* Stockout costs
-* Quantity discount evaluation
+- **Microsoft Excel** — forecasting models, inventory optimization, cost analysis
+- **Operations Research** — EOQ, (Q,R), (R,S) inventory policies
+- **Statistical Forecasting** — Moving Average, Exponential Smoothing, MSE/MAD/MAPE
+- **Service-Level Theory** — Cycle Service Level (P1), Fill Rate (P2)
 
 ---
 
-## Key Results
+## 🏗️ Methodology
 
-### Forecasting Performance
+**Demand Forecasting** — historical demand was analysed using Moving Average and
+Exponential Smoothing. Forecast accuracy was evaluated with MSE, MAD, and MAPE.
+Exponential Smoothing with α = 0.20 achieved the lowest errors across all metrics,
+producing a forecast of **190 units/month**.
 
-Exponential Smoothing with **α = 0.20** achieved the lowest forecasting errors across all evaluation metrics, producing a demand forecast of **190 units per month**.
+**Inventory Policy Design** — three systems were evaluated:
+- Economic Order Quantity (EOQ) as the baseline
+- Continuous Review System (Q, R) with safety stock calibration
+- Periodic Review System (R, S) with a 4-week review period
 
-### Supplier Discount Evaluation
+**Service-Level Analysis** — two management proposals were compared:
+- 95% Cycle Service Level (P1) → required safety stock: **93 units**
+- 95% Fill Rate (P2) → required safety stock: **2 units**
 
-The proposed quantity discount options were rejected after analysis showed that the reduction in purchase price was outweighed by the increase in annual inventory holding costs.
+P2 significantly outperformed P1, with estimated savings of **€1,036 over 18 months**.
 
-### Service-Level Policy Comparison
-
-A **95% Fill Rate (P2)** policy significantly outperformed a **95% Cycle Service Level (P1)** policy.
-
-Key findings:
-
-* Required safety stock under P1: **93 units**
-* Required safety stock under P2: **2 units**
-* Estimated savings: **€1,036 over 18 months**
-
-### Recommended Inventory Policy
-
-The optimal solution was a **Periodic Review System** with:
-
-* Review period: **4 weeks**
-* Order-up-to level: **960 units**
-
-This policy achieved:
-
-* **99.1% Fill Rate**
-* **3% supplier purchase discount**
-* Approximately **€17,000 annual procurement savings**
+**Supplier Discount Evaluation** — proposed quantity discount options were rejected
+after analysis showed that the reduction in purchase price was outweighed by the
+increase in annual inventory holding costs.
 
 ---
 
-## Repository Contents
+## 📁 Key Files
 
-### `Inventory_management.pdf`
-
-Comprehensive engineering report containing:
-
-* Problem formulation
-* Mathematical derivations
-* Forecasting analysis
-* Inventory policy design
-* Cost comparisons
-* Final recommendations
-
-[View Final Engineering Report (PDF)](./Inventory_managment.pdf)
-
-### `ERGASIA_EN.xlsx`
-
-Interactive spreadsheet model containing:
-
-* Automated calculations
-* Forecasting models
-* Inventory optimization logic
-* Cost analysis framework
-* Scenario evaluation tools
-
-[Download Formula-Driven Excel Model (.xlsx)](./ERGASIA_EN.xlsx)
+| File | Description |
+|------|-------------|
+| `ERGASIA_EN.xlsx` | Formula-driven Excel model: forecasting, EOQ, (Q,R), (R,S), cost analysis |
+| `Inventory_Management.pdf` | Full engineering report with derivations and recommendations |
 
 ---
 
-## Skills Demonstrated
+## 📊 Key Results
 
-* Inventory Management
-* Operations Research
-* Supply Chain Analytics
-* Demand Forecasting
-* Service-Level Analysis
-* Cost Optimization
-* Quantitative Decision Making
-* Microsoft Excel Modeling
+| Metric | Value |
+|--------|-------|
+| Best forecasting method | Exponential Smoothing, α = 0.20 |
+| Demand forecast | 190 units / month |
+| Recommended system | Periodic Review (R, S) |
+| Review period | 4 weeks |
+| Order-up-to level | 960 units |
+| Achieved fill rate | 99.1% |
+| Supplier discount secured | 3% |
+| Annual procurement savings | ~€17,000 |
 
 ---
 
-## Key Takeaway
+## 🔑 Key Takeaways
 
-The analysis demonstrates how data-driven inventory management can significantly reduce operating costs while maintaining high customer service levels. By combining forecasting techniques, inventory optimization models, and supplier cost analysis, the project identifies practical strategies that improve both operational efficiency and financial performance.
+**Fill Rate beats Cycle Service Level** — under identical 95% service targets, P2
+required only 2 units of safety stock versus 93 under P1, a dramatic reduction in
+tied-up capital with better actual coverage.
+
+**Quantity discounts are not always beneficial** — the supplier's discount offers
+were financially unattractive once holding cost increases were factored in.
+
+**Periodic review unlocked the discount tier** — consolidating orders into a
+4-week cycle naturally pushed order quantities into the 3% discount bracket,
+delivering ~€17,000 in annual savings without sacrificing service level.
+
+---
+
+## 👥 Author
+
+| Field | Detail |
+|-------|--------|
+| Name | Charitopoulos Kyriazis |
+| University | Aristotle University of Thessaloniki |
+| Department | Mechanical Engineering |
+
+---
+
+*Academic coursework — Aristotle University of Thessaloniki. Not for resubmission
+in other academic contexts.*
